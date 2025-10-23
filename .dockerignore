@@ -1,0 +1,44 @@
+# Ignore build artifacts
+bin/
+.go/
+*.log
+
+# Ignore git files
+.git/
+.gitignore
+
+# Ignore documentation
+docs/
+*.md
+!README.md
+
+# Ignore test files
+*_test.go
+test/
+
+# Ignore CI/CD files
+.github/
+.travis.yml
+cloudbuild.yaml
+
+# Ignore backup files
+*.backup
+go.mod.original
+go.mod.local
+
+# Ignore vendor directory (we'll use go mod)
+vendor/
+
+# Ignore IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Keep the local cache plugin
+!local-cache-plugin/
+
+*.sh
+.dockerignore
+Dockerfile*
+Corefile*

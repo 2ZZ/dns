@@ -1,0 +1,13 @@
+.:53 {
+    errors
+    cache 30 {
+      http 0.0.0.0:5353
+    }
+    reload
+    loop
+    bind 0.0.0.0
+    forward . 192.168.1.254 {
+            prefer_udp
+    }
+    prometheus :9253
+}
